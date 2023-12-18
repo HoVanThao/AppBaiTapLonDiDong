@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mi_search_profile"
+        android:title="Tìm kiếm ..."
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        >
+    </item>
+
+    <item
+        android:id="@+id/mi_addpost_profile"
+        android:title="Add"
+        android:icon="@drawable/baseline_post_add_24"
+        app:showAsAction="ifRoom|collapseActionView"
+        >
+
+    </item>
+
+</menu>

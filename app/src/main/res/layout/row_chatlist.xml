@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileivIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_face"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/onlineStatusIv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_name"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp" />
+
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="His Name"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/profileivIv"
+            android:layout_toRightOf="@id/profileivIv"
+            />
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The last message"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="3dp"
+            android:maxLines="2"
+            android:layout_toEndOf="@+id/profileivIv"
+            android:layout_toRightOf="@id/profileivIv"
+            android:layout_below="@id/nameTv"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

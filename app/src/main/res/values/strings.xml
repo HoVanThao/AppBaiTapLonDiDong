@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">navigationBottom</string>
+    <string name="bottom_home">Home</string>
+    <string name="bottom_Profile">Profile</string>
+    <string name="bottom_users">Users</string>
+    <string name="bottom_notification">Notification</string>
+    <string name="bottom_chat">Chat</string>
+    <string name="bottom_setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

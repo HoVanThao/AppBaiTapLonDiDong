@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddPostActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddPostActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_navigation_toolbar"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Add Post"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAddPostActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/edt_Title_AddPostActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Enter title"
+                android:singleLine="true"
+                android:background="@drawable/editextstyle"
+                />
+
+            <ImageView
+                android:id="@+id/iv_AddPostActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#15B3A4"
+                android:minHeight="200dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_mota_AddPostActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Enter description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="120dp"
+                android:gravity="start"
+                android:singleLine="true"
+                android:background="@drawable/editextstyle"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_upload_AddPostActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_login_btn3"
+                android:text="Upload"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

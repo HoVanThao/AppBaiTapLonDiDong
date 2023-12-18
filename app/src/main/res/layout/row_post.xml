@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_User_itemPost"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_action_face"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_uName_itemPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_pTime_itemPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="33 min"
+                    android:textColor="@color/black"
+
+                    />
+
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnIv_more_itemPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_more_black"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_pTitle_itemPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Title"
+            />
+        <TextView
+            android:id="@+id/tv_pDescription_itemPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The description of the post"
+            />
+        <ImageView
+            android:id="@+id/iv_pImage_itemPost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            />
+        <TextView
+            android:id="@+id/tv_pLikes_itemPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.2k seen"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F0F0"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lienHeNguoiBan_itemPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="Liên Hệ Người Bán"
+            android:drawableLeft="@drawable/ic_send"
+            android:drawableStart="@drawable/ic_send"
+            android:drawablePadding="6dp"
+            android:textColor="#070707"
+             />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
